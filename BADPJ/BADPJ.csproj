@@ -71,6 +71,10 @@
     <Content Include="App_Data\Products_log.ldf">
       <DependentUpon>Products.mdf</DependentUpon>
     </Content>
+    <Content Include="App_Data\User.mdf" />
+    <Content Include="App_Data\User_log.ldf">
+      <DependentUpon>User.mdf</DependentUpon>
+    </Content>
     <Content Include="Initial.aspx" />
     <Content Include="Style\Site.css" />
     <Content Include="Web.config" />
@@ -92,6 +96,7 @@
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
     </Compile>
+    <Compile Include="User.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
