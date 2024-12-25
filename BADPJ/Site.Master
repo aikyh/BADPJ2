@@ -8,10 +8,121 @@
     <link href="~/Style/Site.css" rel="stylesheet" type="text/css" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
-<head></head>
 </head>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poopins:wght@100;200;300;400;600;700&display=swap">
+    <title>Sweet Cake</title>
+
+    <!-- swiper link  -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- cdn icon link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- custom css file  -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style2.css" />
+
+</head>
+
 <body>
 
+    <!-- header section start here  -->
+    <header class="header">
+        <div class="logoContent">
+            <a href="#" class="logo"><img src="images/logo.png" alt=""></a>
+            <h1 class="logoName"> </h1>
+        </div>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#product">about us</a>
+            <a href="#blogs">blogs</a>
+            <a href="#review">shop</a>
+            <a href="#contact">login</a>
+        </nav>
+<!--
+    <div class="icon">
+            <i class="fas fa-search" id="search"></i>
+            <i class="fas fa-bars" id="menu-bar"></i>
+        </div>
+
+        <div class="search">
+            <input type="search" placeholder="search...">
+        </div>
+        -->
+    </header>
+
+        <!--slider-->
+        <section class="main swiper mySwiper">
+            <div class="wrapper swiper-wrapper">
+              <div class="slide swiper-slide">
+                <img src="images2/banner1.png" alt="" class="image" />
+                <div class="image-data" style="padding-top: 320px;">
+                  <!--<span class="text">3D-printed shoes.</span>
+                  <h2>
+                    Running Reimagined
+                  </h2>-->
+                
+                  <a href="#" class="button" style=>Shop Now</a>
+                </div>
+              </div>
+              <div class="slide swiper-slide">
+                <img src="images2/banner2.png" alt="" class="image" />
+                <div class="image-data" style="padding-top: 320px;">
+                    <!--<span class="text">3D-printed shoes.</span>
+                    <h2>
+                      Running Reimagined
+                    </h2>-->
+                  
+                    <a href="#" class="button">Shop Now</a>
+                </div>
+              </div>
+              <div class="slide swiper-slide">
+                <img src="images2/banner3.png" alt="" class="image" />
+                <div class="image-data" style="padding-top: 320px;" >
+                    <!--<span class="text">3D-printed shoes.</span>
+                    <h2>
+                      Running Reimagined
+                    </h2>-->
+                  
+                    <a href="#" class="button">Shop Now</a>
+                </div>
+              </div>
+            </div>
+      
+            <div class="swiper-button-next nav-btn"></div>
+            <div class="swiper-button-prev nav-btn"></div>
+            <div class="swiper-pagination"></div>
+          </section>
+      
+          <!-- Swiper JS -->
+          <script src="JS/swiper-bundle.min.js"></script>
+      
+          <!-- Initialize Swiper -->
+          <script>
+              var swiper = new Swiper(".mySwiper", {
+                  slidesPerView: 1,
+                  loop: true,
+                  pagination: {
+                      el: ".swiper-pagination",
+                      clickable: true,
+                  },
+                  navigation: {
+                      nextEl: ".swiper-button-next",
+                      prevEl: ".swiper-button-prev",
+                  },
+              });
+          </script>
+        <!--slider end-->
+        
 
 </body>
 </html>
